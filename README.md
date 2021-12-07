@@ -2,7 +2,6 @@
 # California State University, Chico 
 
 
-<br/>
-<br/>
+
 ### Introduction 
 <br/>
