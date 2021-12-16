@@ -20,11 +20,15 @@ For our project, our group has designed an interactive rotating cat toy. This ca
 ### Physical Viewpoints
 
 Block Diagram 
+<br/>
 Logical/functional Viewpoint 
+<br/>
 Capabilities Database 
 </p>
 <p align="center">
-  <img src=
+  <img src="Capabilities Database.png" width="800"
+
+<br/>
 ### Controller Design and Simulations
 
 ### Model 
