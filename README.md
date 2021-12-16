@@ -1,4 +1,4 @@
-# Fruta-Pendulum-Group-1
+# Furuta-Pendulum-Group-1
 # California State University, Chico 
 
 Team Members: Ryan Calbert, Jarrel Cook, Michelle Gomez, Noah McCracken, Miguel Rodriguez 
