@@ -61,6 +61,11 @@ Logical/functional Viewpoint
 * J<sub>1</sub> is the moment of inertia.
 
 ### Controller and Design Simulations 
+CoppeliaSim system control for the furuta pendulum based off of the MATLAB code, seen in the appendix.
+<p align="center">
+<img src="CoppeliaSimControl.png" width="1000"/>
+<br/>
+   
 CoppeliaSim model system for the furuta pendulum.
 <p align="center">
 <img src="CoppeliaSim.png" width="400"/>
