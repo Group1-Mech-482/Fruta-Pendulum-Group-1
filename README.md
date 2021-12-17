@@ -36,7 +36,7 @@ Block Diagram
 
 Logical/functional Viewpoint 
 </p>
->p align="center">
+<p align="center">
 <img src="logical.PNG" width="800"/>
 </p>
 <br/>
@@ -44,6 +44,10 @@ Logical/functional Viewpoint
 ### Controller and Design Simulations 
 
 ### Model 
+</p>
+<p align="center">
+<img src="Physical Model of Furuta Pendulum.png" width="800"/>
+</p>
 
 ### Results
 
