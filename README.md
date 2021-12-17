@@ -45,8 +45,6 @@ Logical/functional Viewpoint
 </p>
 <br/>
 
-### Controller and Design Simulations 
-
 ### Model
 <p align="center">
 <img src="Physical Model of Furuta Pendulum.png" width="400"/>
@@ -62,6 +60,11 @@ Logical/functional Viewpoint
 * l<sub>1</sub> is the location of the center mass of the pendulum.
 * J<sub>1</sub> is the moment of inertia.
 
+### Controller and Design Simulations 
+CoppeliaSim model system for the furuta pendulum.
+<p align="center">
+<img src="CoppeliaSim.png" width="400"/>
+<br/>
 
 ### Results
 
@@ -240,7 +243,7 @@ phi=0;
 c = [0 0 0];
 
 %save video
-v = VideoWriter('simulation.mp4');
+v = VideoWriter('simulation');
 open(v);
 
 TXT=title('Time: ');
