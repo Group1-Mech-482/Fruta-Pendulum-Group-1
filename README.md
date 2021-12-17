@@ -46,8 +46,10 @@ Logical/functional Viewpoint
 ### Model 
 </p>
 <p align="center">
-<img src="Physical Model of Furuta Pendulum.png" width="800"/>
+<img src="Physical Model of Furuta Pendulum.png" width="400"/>
 </p>
+The main parameters of the diagram are as follows:
+
 
 ### Results
 
