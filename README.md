@@ -64,6 +64,10 @@ Logical/functional Viewpoint
 
 ### Results
 
+<p align="center">
+<img src="Graph.PNG" width="300"/>
+</p>
+
 ### Appendix A: MATLAB Code
 ```
 g = 9.81;
