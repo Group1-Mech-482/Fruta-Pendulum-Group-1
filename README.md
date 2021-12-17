@@ -66,7 +66,7 @@ Logical/functional Viewpoint
 ### Results
 
 <p align="center">
-<img src="sim.mp4" width="500"/>
+<img src="sim.gif" width="500"/>
 </p>
 
 <p align="center">
