@@ -65,6 +65,7 @@ Logical/functional Viewpoint
 ### Results
 
 ### Appendix A: MATLAB Code
+```
 g = 9.81;
 % 1 - Arm
 % 2 - Pendulum 
@@ -274,4 +275,5 @@ for t=1:20:size(simTheta,1)
 
 %     pause(0.0005); 
 end
+```
 ### References
