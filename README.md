@@ -35,6 +35,10 @@ Block Diagram
 
 
 Logical/functional Viewpoint 
+</p>
+>p align="center">
+<img src="logical.PNG" width="800"/>
+</p>
 <br/>
 
 ### Controller and Design Simulations 
