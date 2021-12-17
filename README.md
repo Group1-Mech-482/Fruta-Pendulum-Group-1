@@ -20,7 +20,6 @@ Presentation video click here.
 
    A Furuta Pendulum consists of three main components, an electric DC motor and an arm for which the third component, the pendulum, is connected. As the system is initialized, the DC reacts to the pendulum's position and produces torque. The torque creates rotation of the arm in a horizontal plane. The pendulum is connected to the arm but can rotate freely in a vertical plane, with the arm as its focal point. The furuta pendulum is able to rotate and balance the arm in an upright position. The vertical arm is able to correct itself if a small displacement is applied to it, such as a cat hitting it. This allows for the furuta pendulum to be a great interactive cat toy. 
 
-
 ### System Requirements
 
 Capabilities Database 
@@ -43,12 +42,20 @@ Logical/functional Viewpoint
 
 ### Controller and Design Simulations 
 
-### Model 
-</p>
+### Model
 <p align="center">
 <img src="Physical Model of Furuta Pendulum.png" width="400"/>
 </p>
-The main parameters of the diagram are as follows:
+   The main parameters of the diagram are as follows: 
+
+* &theta;<sub>o</sub> is the angular position of the arm in radians.
+* &theta;<sub>1</sub> is the angular position of the pendulum with respect to the pendulum in the downward position, in radians.
+* &tau; is the torque coming from the electric motor.
+* I<sub>o</sub> is the moment of inertia of the arm plus the motor inertia.
+* L<sub>o</sub> is the length of the arm.
+* m<sub>1</sub> is the pendulum mass.
+* l<sub>1</sub> is the location of the center mass of the pendulum.
+* J<sub>1</sub> is the moment of inertia.
 
 
 ### Results
