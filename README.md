@@ -209,12 +209,12 @@ Q2=[1 0 0 0;
 
 MATLAB Code for visualization of the furuta pendulum. This code allows the user to see a simulation of the furuta pendulum. A video of the simulation can be seen above.
 <details>
-   <summary>Click to expand for furuta pendulum visualization code.</summary>
+   <summary>Click to expand furuta pendulum visualization code.</summary>
    
 ```
 view(135,20)                    %Starting view
 AL = 5;                         %Define graph axis limits
-
+axis([-AL AL -AL AL -AL AL]);
 grid on
 
 L1=3;  %Rotary arm length
@@ -233,16 +233,18 @@ Harm  = fill3(Xh,Yh,Zh,'b');
 Varm  = fill3(Xv,Yv,Zv,'g'); 
 
 s=8;
-M=scatter3(Xv(2),Yv(2),Zv(2),s,'filled','MarkerFaceColor','b','MarkerEdgeColor','k')
-
-axis([-AL AL -AL AL -AL AL]);
+M=scatter3(Xv(2),Yv(2),Zv(2),s,'filled','MarkerFaceColor','b','MarkerEdgeColor','k');
 
 theta=0;
 phi=0;
 c = [0 0 0];
 
-TXT=title('Time: ')
-for t=1:6:size(simTheta,1)
+%save video
+v = VideoWriter('simulation.mp4');
+open(v);
+
+TXT=title('Time: ');
+for t=1:10:size(simTheta,1)
     TXT2=sprintf('Time:%.2f',simt(t));
     set(TXT,'String',TXT2);
     
@@ -281,8 +283,14 @@ for t=1:6:size(simTheta,1)
     set(M,'YData',Yv(2));
     set(M,'ZData',Zv(2));
     
-    drawnow;
+    %save video
+    frame = getframe(gcf);
+    writeVideo(v, frame);
+    if(simt(t) > 5) %break after given time
+        break;
+    end
 end
+close(v);
 ```
 </details>
 
