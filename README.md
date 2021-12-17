@@ -11,6 +11,7 @@ MECA 482: Fall 2021
 3. Controller and Design and Simulations 
 4. Model
 5. Results
+6. Appendix 
 
 Presentation video click here.
 
@@ -40,7 +41,7 @@ Block Diagram
 Logical/functional Viewpoint 
 </p>
 <p align="center">
-<img src="logical.PNG" width="800"/>
+<img src="logical.PNG" width="500"/>
 </p>
 <br/>
 
@@ -65,7 +66,7 @@ Logical/functional Viewpoint
 ### Results
 
 <p align="center">
-<img src="Graph.PNG" width="300"/>
+<img src="Graph.PNG" width="800"/>
 </p>
 
 ### Appendix A: MATLAB Code
