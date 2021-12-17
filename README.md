@@ -74,6 +74,11 @@ Logical/functional Viewpoint
 </p>
 
 ### Appendix A: MATLAB Code
+Main MATLAB code for furuta pendulum containing the physical and simulation parameters. This code linearizes the physical motion of the furuta pendulum and creates pseudo linear system matrices.
+<br> This code needs to be run before the pendulum visulatization code. 
+<details>
+   <summary>Click to expand furuta pendulum main code.</summary>
+
 ```
 g = 9.81;
 % 1 - Arm
@@ -85,7 +90,7 @@ L1 = 0.066;
 L2 = 0.146;  
 M = 0.044;
 
-J = 3.5256e-4; %3.5256e-04            %System
+J = 3.5256e-4;
 kb_p = 4.7940e-04 ;
 
 kb_m = 6.75e-4 ;
@@ -160,7 +165,6 @@ Observ = rank(obsv(Ap,C));
 %K = place(Ap,Bp,[-5 -4 -2+2j -2-2j]);  
 %K = place(Ap,Bp,[-8+8j -8-8j  -4+4j -4-4j]);
 
-
 Q = [0.1 0 0 0;
      0 0.01 0 0;
      0 0 100 0;
@@ -200,14 +204,20 @@ Q2=[1 0 0 0;
     0 0 1000 0;
     0 0 0 10];
 [K2, ~, E] = lqr(Ap2,Bp2,Q2,R2);
+```
+</details>
 
-
+MATLAB Code for visualization of the furuta pendulum. This code allows the user to see a simulation of the furuta pendulum. A video of the simulation can be seen above.
+<details>
+   <summary>Click to expand for furuta pendulum visualization code.</summary>
+   
+```
 view(135,20)                    %Starting view
 AL = 5;                         %Define graph axis limits
 
 grid on
 
-L1=3;  %Rotatary arm length
+L1=3;  %Rotary arm length
 L2=2;  %Pendulum length
 
 Xh=[0 ; L1]';
@@ -225,7 +235,6 @@ Varm  = fill3(Xv,Yv,Zv,'g');
 s=8;
 M=scatter3(Xv(2),Yv(2),Zv(2),s,'filled','MarkerFaceColor','b','MarkerEdgeColor','k')
 
-
 axis([-AL AL -AL AL -AL AL]);
 
 theta=0;
@@ -233,8 +242,7 @@ phi=0;
 c = [0 0 0];
 
 TXT=title('Time: ')
-
-for t=1:20:size(simTheta,1)
+for t=1:6:size(simTheta,1)
     TXT2=sprintf('Time:%.2f',simt(t));
     set(TXT,'String',TXT2);
     
@@ -252,7 +260,6 @@ for t=1:20:size(simTheta,1)
     Yvb = Xva*sin(phi)+Yva*cos(phi) + L1*sin(phi);
     Zvb = Zva;
         
-    
     Xv=[Xh(2);Xvb]';
     Yv=[Yh(2);Yvb]';
     Zv=[ 0   ;Zvb]';
@@ -260,29 +267,23 @@ for t=1:20:size(simTheta,1)
     set(Harm,'XData',Xh);
     set(Harm,'YData',Yh);
     set(Harm,'ZData',Zh);
-    %set(Harm,'FaceVertexCData',C);
     
     set(Varm,'XData',Xv);
     set(Varm,'YData',Yv);
     set(Varm,'ZData',Zv);
-    %set(Varm,'FaceVertexCData',C);
+    
     rem(t,30)
     
-
-
-     %scatter3(Xv(2),Yv(2),Zv(2),s,'filled','MarkerFaceColor',c,'MarkerEdgeColor','k');
-          
-          
-       
-       
+    %trace the end of the pendulum
+    %scatter3(Xv(2),Yv(2),Zv(2),s,'filled','MarkerFaceColor',c,'MarkerEdgeColor','k');
     
     set(M,'XData',Xv(2));
     set(M,'YData',Yv(2));
     set(M,'ZData',Zv(2));
     
     drawnow;
-
-%     pause(0.0005); 
 end
 ```
+</details>
+
 ### References
