@@ -30,6 +30,10 @@ Capabilities Database
 
 
 Block Diagram 
+</p>
+<p align="center">
+<img src="block.PNG" width="500"/>
+</p>
 <br/>
 
 
