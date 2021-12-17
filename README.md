@@ -66,6 +66,10 @@ Logical/functional Viewpoint
 ### Results
 
 <p align="center">
+<img src="Simulation.fig" width="500"/>
+</p>
+
+<p align="center">
 <img src="Graph.PNG" width="800"/>
 </p>
 
