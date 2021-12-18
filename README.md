@@ -23,31 +23,35 @@ Presentation video click here.
 
 ### System Requirements
 
-Capabilities Database 
-</p>
 <p align="center">
 <img src="Capabilities Database.PNG" width="800"/>
 </p>
+<p align="center">
+Figure 1: Capabilities database.
+</p>
 
-
-Block Diagram 
 </p>
 <p align="center">
 <img src="block.PNG" width="500"/>
 </p>
+<p align="center">
+Figure 2: Block diagram.
 <br/>
 
-
-Logical/functional Viewpoint 
 </p>
 <p align="center">
 <img src="logical.PNG" width="500"/>
 </p>
+<p align="center">
+   Figure 3: Logical/functional viewpoint.
 <br/>
 
 ### Model
 <p align="center">
 <img src="Physical Model of Furuta Pendulum.png" width="400"/>
+</p>
+<p align="center">
+   Figure 4: Physical model of the furuta pendulum.
 </p>
    The main parameters of the diagram are as follows: 
 
@@ -61,24 +65,34 @@ Logical/functional Viewpoint
 * J<sub>1</sub> is the moment of inertia.
 
 ### Controller and Design Simulations 
-CoppeliaSim system control for the furuta pendulum based off of the MATLAB code, seen in the appendix.
 <p align="center">
 <img src="CoppeliaSimControl.png" width="1000"/>
 <br/>
+<p align="center">
+   Figure 5: CoppeliaSim system control for the furuta pendulum based off of the MATLAB code, seen in the appendix.
+</p>
    
-CoppeliaSim model system for the furuta pendulum.
 <p align="center">
 <img src="CoppeliaSim.png" width="400"/>
 <br/>
+ <p align="center">
+    Figure 6: CoppeliaSim model system for the furuta pendulum.
+  </p>
 
 ### Results
-
 <p align="center">
 <img src="sim.gif" width="500"/>
 </p>
-
+<p align="center"> 
+   Figure 7: Time simulation of Furuta Pendulum.
+</p>
+   
+   
 <p align="center">
 <img src="Graph.PNG" width="800"/>
+</p>
+<p align="center">
+   Figure 8: Voltage and Theta simulation output.
 </p>
 
 ### Appendix A: MATLAB Code
