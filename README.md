@@ -13,12 +13,8 @@ MECA 482: Fall 2021
 5. Results
 6. Appendix 
 
-<p align="center"> 
- Presentation Video
-</p>
-<p align="center">
-<img src="Presentation.gif" width="300"/>
-</p>
+### Video Presentation
+  The video presentation can be found in the attachments section, please click and download the file in order to view the project video.
 
 
 ### Introduction 
