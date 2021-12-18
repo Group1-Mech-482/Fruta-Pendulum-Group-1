@@ -17,7 +17,7 @@ MECA 482: Fall 2021
  Presentation Video
 </p>
 <p align="center">
-<img src="Presentatio.gif" width="300"/>
+<img src="Presentation.gif" width="300"/>
 </p>
 
 
