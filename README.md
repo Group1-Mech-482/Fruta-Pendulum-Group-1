@@ -97,7 +97,7 @@ Figure 2: Block diagram.
    Figure 8: Voltage and Theta simulation output.
 </p>
 
-Final report can be found in the attachments sections.
+Final report can be found in the attachments section
 
 ### Appendix A: MATLAB Code
 Main MATLAB code for furuta pendulum containing the physical and simulation parameters. This code linearizes the physical motion of the furuta pendulum and creates pseudo linear system matrices.
